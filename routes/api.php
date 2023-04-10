@@ -19,3 +19,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::get("index", [\App\Http\Controllers\RestController::class, "index"]);
+
+
+Route::get("import", [\App\Http\Controllers\KrialController::class, "import"]);
+Route::get("export", [\App\Http\Controllers\KrialController::class, "export"]);
